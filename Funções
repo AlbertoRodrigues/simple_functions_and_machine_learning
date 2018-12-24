@@ -1,0 +1,32 @@
+
+def Minimo(obj):
+    lista=[]
+    for i in obj:
+        lista.append(i)
+    min=lista[0]
+    for i in range(len(lista)-1):
+        if lista[i]<lista[i+1] and lista[i]<min:
+            min=lista[i]
+        if lista[i+1]<lista[i] and lista[i+1]<min:
+            min=lista[i+1]
+    return (min)
+conj={2,5,7,4,3,6,1,2,3,5}
+print(Minimo(conj))
+print(Minimo([5,4,7,8,9,6,2,2,3,5,1,4,7,8,9]))
+
+def Maximo(obj):
+    lista=[]
+    for i in obj:
+        lista.append(i)
+    max=lista[0]
+    for i in range(len(lista)-1):
+        if lista[i]>lista[i+1] and lista[i]>max:
+            max=lista[i]
+        if lista[i+1]>lista[i] and lista[i+1]>max:
+            max=lista[i+1]
+    return (max)
+
+print(Maximo(conj))
+print(Maximo([5,4,7,8,9,6,2,2,3,5,1,4,7,8,9]))
+
+
