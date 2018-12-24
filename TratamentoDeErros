@@ -1,0 +1,13 @@
+import time
+
+def abreArquivo():
+    try:
+        arquivo=open("arquivo2.txt","r")
+        return True
+    except Exception as Erro:
+        print("Ocorreu esse erro: ",Erro)
+        return False
+
+while not abreArquivo():
+    print("Tentando abrir o arquivo ")
+    time.sleep(4)
