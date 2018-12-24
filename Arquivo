@@ -1,0 +1,15 @@
+arquivo=open("arquivo.txt","w")
+#Criando arquivo txt
+for i in range(100):
+    arquivo.write(str(i)+"\n")
+arquivo.close()
+#Adiciona sempre e não sobrescreve
+arquivo = open("arquivo.txt", "a")
+# Criando arquivo txt
+for i in range(100):
+    arquivo.write(str(i) + "\n")
+
+##Abrindo arquivo já existente
+arquivo=open("arquivo.txt","r")
+print(arquivo.read())
+arquivo.close()
