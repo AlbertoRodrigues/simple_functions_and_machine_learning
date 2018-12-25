@@ -1,8 +1,0 @@
-lista=[]
-tamanho=int(input("Digite o nÃºmero de pessoas: "))
-for i in range(tamanho):
-    lista.append(input("Digite o nome da pessoa: "))
-print(lista)
-
-for i in range(tamanho):
-    print(lista[i])
